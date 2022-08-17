@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+:root {
+    --smaller: 0.70;
+  }
+  
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    align-items: center;
+    background-color:#ff6289;
+    display: flex;
+    font-family: "blow";
+  }
+  
+  .container {
+    color: #d8cacd;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: normal;
+    letter-spacing: 4px;
+    font-size:130px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 3.5px;
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 80px;
+    list-style-type: none;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;;
+    -webkit-text-stroke-width:2.5px;
+  }
+  
+  li span {
+    display: block;
+    font-size:100px;
+
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+
+  @font-face{
+    font-family: "blow";
+    src: url("fonts/blow.ttf");
+}
